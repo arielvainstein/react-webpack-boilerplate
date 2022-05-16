@@ -1,29 +1,7 @@
-/**
- * Module dependencies
- */
 import React from 'react';
 import Home from './pages/home';
-import './styles.scss';
+import './styles.module.scss';
 
-/**
- * UI Components
- */
+const App = () => <Home />;
 
-/**
- * View Component
- */
-export default class App extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {};
-  }
-
-
-  render() {
-   
-    return (
-        <Home />
-    );
-  }
-}
+export default App;

@@ -1,8 +1,8 @@
 import React, { Suspense, lazy } from "react";
-import Modal from "../../app/components/modal";
-import Loading from "../../app/components/loading";
+import Modal from "../../../app/components/Modal";
+import Loading from "../../../app/components/Loading";
 
-const LazyShowsList = lazy(() => import("../../app/components/showsList"))
+const LazyShowsList = lazy(() => import("../../../app/components/ShowsList"))
 
 const Contact = () => {
   return (

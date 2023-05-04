@@ -1,9 +1,9 @@
 import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 
-import Home from "./components/home";
-import About from "./components/about";
-import Contact from "./components/contact";
+import Home from "../routes/home";
+import About from "../routes/about";
+import Contact from "../routes/contact";
 import "./styles.module.scss";
 
 const App = () => (

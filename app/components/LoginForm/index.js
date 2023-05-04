@@ -1,8 +1,10 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom";
-import { Formik, Field, Form, FormikHelpers } from "formik";
+import { Formik, Field, Form } from "formik";
+import { AuthenticationContext } from "../../context/authentication";
 
 const LoginForm = () => {
+  const authContext = React.useContext(AuthenticationContext);
+  console.log('%c⧭', 'color: #00e600', authContext);
   return (
     <div>
       <h1>Sign Up</h1>

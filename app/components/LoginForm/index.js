@@ -4,10 +4,11 @@ import { AuthenticationContext } from "../../context/authentication";
 
 const LoginForm = () => {
   const authContext = React.useContext(AuthenticationContext);
-  console.log('%c⧭', 'color: #00e600', authContext);
+  const [message, setMessage] = React.useState(null);
   return (
     <div>
       <h1>Sign Up</h1>
+      {message && <p>{message}</p>}
       <Formik
         initialValues={{
           firstName: "",
@@ -16,7 +17,7 @@ const LoginForm = () => {
         }}
         onSubmit={async (values) => {
           await new Promise((r) => setTimeout(r, 500));
-          alert(JSON.stringify(values, null, 2));
+          setMessage("Form submitted successfully");
         }}
       >
         <Form>

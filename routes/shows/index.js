@@ -1,13 +1,8 @@
 import React, { Suspense, lazy } from "react";
 import Modal from "../../app/components/modal";
+import Loading from "../../app/components/loading";
 
 const LazyShowsList = lazy(() => import("../../app/components/showsList"))
-
-const Loading = () => {
-  return <h2>🌀 Loading...</h2>;
-};
-
-
 
 const Contact = () => {
   return (

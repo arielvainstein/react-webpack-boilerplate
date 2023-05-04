@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <div className={styles.home}>Home</div>
       <Link to="about">About</Link>
-      <Link to="contact">Contact</Link>
+      <Link to="shows">Shows</Link>
     </>
   );
 };
